@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="StudentName"
+      #studentName
+    />
+  </div>
+  <div class="col">
+    <select name="" id="" class="form-control" #status>
+      <option value="inschool">inschool</option>
+      <option value="outofschool">outofschool</option>
+      <option value="hold">hold</option>
+    </select>
+  </div>
+  <div class="col">
+    <button
+      class="btn btn-info"
+      (click)="onCreateStudent(studentName.value, status.value)"
+    >
+      Add
+    </button>
+  </div>
+</div>
